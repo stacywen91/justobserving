@@ -1,0 +1,22 @@
+nav{
+    background: black;
+  }
+nav > a {
+     margin: 10px;
+     text-align: center;
+     color: #ebeff5;
+    }
+
+.footer {
+   background-color:black;
+   order:3;
+   flex-shrink: 0;
+   display:grid;
+   width: 100%;
+   grid-template-columns: repeat(3, 1fr);
+  }
+.footer > a {
+    margin: 10px;
+    text-align: center;
+    color:white;
+    }

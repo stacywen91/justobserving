@@ -1,0 +1,37 @@
+/* If Screen Is Wide Enough */
+
+@media(min-width:900px){
+.container{
+      display:grid;
+      grid-template-rows: 40px auto auto auto 40px;
+      grid-template-areas:
+      "nb"
+      "tt"
+      "sb"
+      "main"
+      "ft";
+      /* grid-column-gap: 2px;
+      grid-row-gap: 2px; */
+  }
+.aboutme{
+  grid-area: sb;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "pic intro";
+  }
+img{
+  width: 100%;
+  height: auto;
+  }
+#aboutme{
+      grid-area: intro;
+      padding: 10px 20px 10px 20px;
+    }
+#homepagepic{
+  grid-area: pic;
+}
+.blogtitle{
+      text-align: center;
+    }
+}

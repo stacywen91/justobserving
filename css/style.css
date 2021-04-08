@@ -1,55 +1,72 @@
-.container{
-  display:grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 600px;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* Initially each element has its own row for small screens */
-  grid-template-areas: 
-  "hd"
-  "sd"
-  "main"
-  "ft";
-  border: 2px solid yellow;
-}
-/* add css for nested grid here */
-#nestedGrid{
-  display:grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
-  color: grey;
+
+/* @import url(./wide.css); */
+@import url(./medium.css);
+@import url(./headerfooter.css);
+body{
+  font-family: 'News Cycle', sans-serif;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
-#nestedGrid > *{
-  border: 2px solid aquamarine;
+.container{
+  display:flex;
+  width:100%;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-.box{
-    border: 1px solid red;
-    background: #F8FA9D;
-    }
-  .header{
-    /* row start/column start/ row end/ column end */
-    grid-area:hd;
+.box{/* remain unchanged across screen sizes */
+      border: 1px solid white;
+      background: #ebeff5;
+      padding: 10px 20px 10px 20px;
+      }
+
+nav{
+    order:1;
+    flex-shrink: 0;
+    position:fixed; /* this freeze the navbar at the top of the page*/
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .footer{
-    grid-area: ft;  
+
+.contentwrapper{
+    order:2;
+    flex: 1 0 auto;
   }
-  .sidebar{
-    grid-area: sd;
+
+.contentwrapper{/* small screen structure */
+      display:flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
   }
-  .content{
-    grid-area: main;
+
+.blogtitle{
+    order:1;
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+        /* background: blue; */
   }
-/* If Screen Is Wide Enough */
-@media(min-width:900px){
-.container{
-      display:grid;
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd sd main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 2px solid red;
+
+.aboutme{
+  order:2;
   }
-}
+
+img {
+  height: 180px;
+  width: auto;
+  position: center;
+  }
+.content{
+    background: #ebeff5;
+    order:3;
+  }
+#homepagepic, #aboutme {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
