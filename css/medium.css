@@ -1,6 +1,6 @@
 /* If Screen Is at tablet width */
 
-@media(min-width:700px){
+@media only screen and (min-width:700px){
   .contentwrapper{/* medium screen structure */
         display:grid;
         grid-template-rows: 10vh 40vh 40vh;
@@ -9,25 +9,22 @@
         "tt tt"
         "pic intro"
         "main main";
-        border: 3px solid green;
     }
   #blogtitle{
-      border: 3px solid blue;
       grid-area:tt;
     }
   #homepagepic{
       grid-area:pic;
-      border: 3px solid blue;
-      background-color: green;
       }
   #aboutme{
     grid-area:intro;
-    border: 3px solid blue;
-    background-color: green;
+    padding: 10px 20px 10px 20px;
     }
+  /* .aboutme{
+      display:flex;
+      } */
   #hpblog{
       grid-area:main;
-      border: 3px solid blue;
     }
   img {
       height: 800px;
