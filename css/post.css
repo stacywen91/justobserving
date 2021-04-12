@@ -1,4 +1,5 @@
-@import url(./headerfooter.css);
+@import url(./header.css);
+@import url(./footer.css);
 @import url(./authorsection.css);
 body{
   font-family: 'News Cycle', sans-serif;
@@ -89,7 +90,7 @@ nav{
  button:hover, a:hover {
      opacity: 0.7;
    }
-   
+
  .bottomplaceholder{
    height:80px;
  }

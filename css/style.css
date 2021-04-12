@@ -1,4 +1,6 @@
-@import url(./headerfooter.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./wide.css);
 body{
   font-family: 'News Cycle', sans-serif;
   margin: 0;
@@ -81,7 +83,7 @@ button:hover, a:hover {
    display:grid;
    grid-template-columns: repeat(3, 1fr);
  }
- 
+
 .bottomplaceholder{
   height:80px;
   order:3;
