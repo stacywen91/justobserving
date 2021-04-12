@@ -1,5 +1,6 @@
-/* Style inputs with type="text", select elements and textareas */
-@import url(./headerfooter.css);
+
+@import url(./header.css);
+@import url(./footer.css);
 body{
   font-family: 'News Cycle', sans-serif;
   margin: 0;
