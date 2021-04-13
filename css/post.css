@@ -40,7 +40,14 @@ nav{
     max-width:80%;
     max-height: 400px;
     display: block;
-    margin: 10px auto 80px auto;
+    margin: 10px auto 10px auto;
+}
+
+figcaption {
+  margin: auto auto 80px auto;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .footer {
@@ -50,7 +57,7 @@ nav{
      grid-template-rows:repeat(2, 1fr);
    }
 
- .footerwrapper{
+.footerwrapper{
    display:grid;
    grid-template-columns: repeat(3, 1fr);
  }
@@ -94,3 +101,12 @@ nav{
  .bottomplaceholder{
    height:80px;
  }
+
+h3{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+article {
+  margin-top: 60px;
+}
